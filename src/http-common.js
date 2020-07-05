@@ -7,3 +7,5 @@ export default axios.create({
     'Content-type': 'application/json',
   },
 });
+
+//A URL de conexão realizada é a fornecida pelo Heroku
