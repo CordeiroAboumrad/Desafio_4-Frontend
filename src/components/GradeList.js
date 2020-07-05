@@ -13,8 +13,8 @@ const GradeList = () => {
   }, []);
 
   const onChangeSearchName = (e) => {
-    const searchName = e.target.value;
-    setSearchName(searchName);
+    // const searchName = e.target.value;
+    setSearchName(e.target.value);
   };
 
   const retrieveGrade = () => {
@@ -60,6 +60,7 @@ const GradeList = () => {
         console.log(e);
       });
   };
+
 
   return (
     <div className="list row">
