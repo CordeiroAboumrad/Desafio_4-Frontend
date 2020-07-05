@@ -78,7 +78,7 @@ const GradeList = () => {
               type="button"
               onClick={findByName}
             >
-              Search
+              Buscar
             </button>
           </div>
         </div>
