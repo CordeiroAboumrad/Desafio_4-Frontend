@@ -155,12 +155,12 @@ const GradeList = () => {
               {currentGrade.value}
             </div>
 
-            <Link
+            <Grade
               to={'/grade/' + currentGrade._id}
               className="badge badge-warning"
-            >
+            />
               Edit
-            </Link>
+            {/* </Link> */}
           </div>
         ) : (
           <div>
