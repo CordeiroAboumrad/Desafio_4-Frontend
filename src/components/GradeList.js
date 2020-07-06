@@ -147,7 +147,7 @@ const GradeList = () => {
               to={'/grade/' + currentGrade._id}
               className="badge badge-warning"
               // onClick={() => setActiveGrade(grade, index)}
-              onClick={() => Grade.setCurrentGrade(currentGrade)}
+              onClick={() => setCurrentGrade(currentGrade)}
             >
               Edit
             </Link>
