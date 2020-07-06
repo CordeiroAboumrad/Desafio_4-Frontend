@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import GradeDataService from '../services/GradeService';
 import { Link } from 'react-router-dom';
+import Grade from './Grade';
 
 const GradeList = () => {
   const [grade, setGrade] = useState([]);
@@ -146,6 +147,7 @@ const GradeList = () => {
               to={'/grade/' + currentGrade._id}
               className="badge badge-warning"
               // onClick={() => setActiveGrade(grade, index)}
+              onClick={() => Grade.setCurrentGrade(currentGrade)}
             >
               Edit
             </Link>
