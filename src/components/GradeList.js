@@ -63,6 +63,18 @@ const GradeList = () => {
   };
 
 
+  const deleteById = () => {
+    GradeDataService.remove(currentGrade._id)
+      .then((response) => {
+        setGrade(response.data);
+        console.log(response.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+
   return (
     <div className="list row">
       <div className="col-md-8">

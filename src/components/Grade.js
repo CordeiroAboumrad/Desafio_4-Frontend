@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GradeDataService from '../services/GradeService';
+import GradeList from './GradeList';
 
 const Grade = (props) => {
   const initialGradeState = {
@@ -45,7 +46,7 @@ const Grade = (props) => {
   const deleteGrade = () => {
     GradeDataService.remove(currentGrade._id)
       .then((response) => {
-        props.history.push('/grade');
+        props.history.push('/');
       })
       .catch((e) => {
         console.log(e);
@@ -66,7 +67,7 @@ const Grade = (props) => {
                 id="name"
                 name="name"
                 // defaultValue={currentGrade.name}
-                value={currentGrade.name}
+                value={GradeList.currentGrade.name}
                 onChange={handleInputChange}
               />
             </div>
