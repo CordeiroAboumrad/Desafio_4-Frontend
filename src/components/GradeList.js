@@ -115,7 +115,7 @@ const GradeList = () => {
               <label>
                 <strong>Id:</strong>
               </label>{' '}
-              {currentGrade.id}
+              {currentGrade._id}
             </div>
             <div>
               <label>
