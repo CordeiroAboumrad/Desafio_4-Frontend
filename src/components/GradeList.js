@@ -113,6 +113,12 @@ const GradeList = () => {
             <h4>Editor de Registro</h4>
             <div>
               <label>
+                <strong>Id:</strong>
+              </label>{' '}
+              {currentGrade.id}
+            </div>
+            <div>
+              <label>
                 <strong>Name:</strong>
               </label>{' '}
               {currentGrade.name}
@@ -139,7 +145,7 @@ const GradeList = () => {
             <Link
               to={'/grade/' + currentGrade.id}
               className="badge badge-warning"
-              // onClick={}
+              // onClick={() => setActiveGrade(grade, index)}
             >
               Edit
             </Link>
