@@ -158,8 +158,6 @@ const GradeList = () => {
             <Link
               to={'/grade/' + currentGrade._id}
               className="badge badge-warning"
-              // onClick={() => setActiveGrade(grade, index)}
-              onClick={() => setCurrentGrade(currentGrade)}
             >
               Edit
             </Link>

@@ -67,7 +67,7 @@ const Grade = (props) => {
                 id="name"
                 name="name"
                 // defaultValue={currentGrade.name}
-                value={GradeList.currentGrade.name}
+                value={currentGrade.name}
                 onChange={handleInputChange}
               />
             </div>
