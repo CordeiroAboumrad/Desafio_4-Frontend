@@ -3,13 +3,14 @@ import GradeDataService from '../services/GradeService';
 import GradeList from './GradeList';
 
 const Grade = (props) => {
-  const initialGradeState = {
-    _id: '',
-    name: '',
-    subject: '',
-    type: '',
-    value: '',
-  };
+  // const initialGradeState = {
+  //   _id: '',
+  //   name: '',
+  //   subject: '',
+  //   type: '',
+  //   value: '',
+  // };
+  const initialGradeState = (GradeList.currentGrade);
   const [currentGrade, setCurrentGrade] = useState(initialGradeState);
   const [message, setMessage] = useState('');
 
