@@ -65,6 +65,7 @@ const Grade = (props) => {
                 className="form-control"
                 id="name"
                 name="name"
+                defaultValue={currentGrade.name}
                 value={currentGrade.name}
                 onChange={handleInputChange}
               />
