@@ -120,7 +120,7 @@ const Grade = (props) => {
       ) : (
         <div>
           <br />
-          <p>Please click on a Grade...</p>
+          <p>Favor clicar no nome</p>
         </div>
       )}
     </div>

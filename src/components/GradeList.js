@@ -105,11 +105,12 @@ const GradeList = () => {
         <button className="m-3 btn btn-sm btn-danger" onClick={removeAllGrade}>
           Remove All
         </button>
+
       </div>
       <div className="col-md-6">
         {currentGrade ? (
           <div>
-            <h4>Grade</h4>
+            <h4>Editor de Registro</h4>
             <div>
               <label>
                 <strong>Name:</strong>
@@ -145,7 +146,7 @@ const GradeList = () => {
         ) : (
           <div>
             <br />
-            <p>Please click on a Grade...</p>
+            <p>Favor clicar no nome desejado</p>
           </div>
         )}
       </div>
