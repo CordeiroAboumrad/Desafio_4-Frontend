@@ -56,7 +56,7 @@ const Grade = (props) => {
     <div>
       {currentGrade ? (
         <div className="edit-form">
-          <h4>Grade</h4>
+          <h4>Editor de Registro de Nota</h4>
           <form>
             <div className="form-group">
               <label htmlFor="name">Name</label>

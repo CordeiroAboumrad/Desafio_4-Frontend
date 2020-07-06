@@ -139,6 +139,7 @@ const GradeList = () => {
             <Link
               to={'/grade/' + currentGrade.id}
               className="badge badge-warning"
+              onClick={}
             >
               Edit
             </Link>
